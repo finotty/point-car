@@ -55,7 +55,8 @@ address { font-style: normal; }
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
-.ico { width: 20px; height: 20px; flex: none; }
+svg { box-sizing: border-box; }
+.ico { width: 20px; height: 20px; max-width: 20px; max-height: 20px; flex: none; display: inline-block; vertical-align: middle; }
 
 /* ---------- Eyebrow ---------- */
 .eyebrow {
@@ -115,7 +116,6 @@ address { font-style: normal; }
 }
 .nav-links a:hover, .nav-links a.active { color: #fff; }
 .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
-.nav-arrow,
 .nav-footer,
 .nav-backdrop { display: none; }
 .header-actions { display: flex; align-items: center; gap: 14px; margin-left: 10px; }
@@ -604,19 +604,6 @@ address { font-style: normal; }
     color: var(--red);
   }
 
-  .nav-arrow {
-    display: block;
-    width: 18px;
-    height: 18px;
-    color: var(--red);
-    opacity: .75;
-    transition: transform .2s var(--ease), opacity .2s;
-  }
-
-  .nav-links a:hover .nav-arrow {
-    transform: translateX(4px);
-    opacity: 1;
-  }
 
   .nav-footer {
     display: flex;
