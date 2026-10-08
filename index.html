@@ -69,25 +69,63 @@
         <img src="assets/logo.png" alt="DS Point Car Oliveira" width="691" height="405">
       </a>
 
+      <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
-        <a href="#servicos">Serviços</a>
-        <a href="#sobre">A oficina</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#contato">Contato</a>
-        <a class="btn btn-primary nav-cta" id="nav-cta-mobile" href="https://wa.me/5521970337668" data-wa="Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer">
-          Orçamento no WhatsApp
-        </a>
+        <div class="nav-links">
+          <a href="#servicos">
+            <span>Serviços</span>
+            <svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#sobre">
+            <span>A oficina</span>
+            <svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#como-funciona">
+            <span>Como funciona</span>
+            <svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#galeria">
+            <span>Galeria</span>
+            <svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#contato">
+            <span>Onde estamos</span>
+            <svg class="nav-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <div class="nav-footer">
+          <a class="btn btn-primary btn-block nav-cta" id="nav-cta-mobile" href="https://wa.me/5521970337668" data-wa="Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Pedir orçamento no WhatsApp
+          </a>
+
+          <div class="nav-contact-card">
+            <a class="nav-phone" href="tel:+5521970337668">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>
+              <span>(21) 97033-7668</span>
+            </a>
+            <p class="nav-addr">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+              <span>Estrada Santo Antônio, LT 18 · Jardim Wiliam</span>
+            </p>
+          </div>
+        </div>
       </nav>
 
-      <a class="btn btn-primary btn-sm header-cta" id="header-cta" href="https://wa.me/5521970337668" data-wa="Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer">
-        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
-        Orçamento
-      </a>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm header-cta" id="header-cta" href="https://wa.me/5521970337668" data-wa="Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          <span class="cta-label">Orçamento</span>
+        </a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
     </div>
   </header>
 

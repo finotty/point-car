@@ -22,12 +22,17 @@ window.addEventListener('scroll', onScroll, { passive: true });
 /* ---------- Menu mobile ---------- */
 const toggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('main-nav');
+const backdrop = document.getElementById('nav-backdrop');
+
 const setMenu = (open) => {
   document.body.classList.toggle('menu-open', open);
   toggle.setAttribute('aria-expanded', String(open));
   toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  document.body.style.overflow = open ? 'hidden' : '';
 };
+
 toggle.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
+if (backdrop) backdrop.addEventListener('click', () => setMenu(false));
 nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
 window.addEventListener('resize', () => { if (window.innerWidth > 900) setMenu(false); });
